@@ -1,0 +1,500 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F0F7EE;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+nav {
+    text-align: right;
+    background-color: #87BBA2;
+    min-height: 32px;
+    padding-top: 16px;
+    padding-bottom: 4px;
+    margin-bottom: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    margin-right: 10px;
+    padding-left: 20px;
+    font-family: cursive;
+    display: inline-block;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: #F0F7EE;
+}
+
+.menuButtons {
+    margin-right: 50px;
+}
+
+.hero {
+    background-color: black;
+    min-height: 400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: auto;
+    margin-top: 0;
+}
+
+.hero h1 {
+    color: #F0F7EE;
+    font-family: fantasy;
+    font-size: 200px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    color: #F0F7EE;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+.section {
+    background-color: #F0F7EE;
+    min-height: 400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.section h2 {
+    padding-top: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+}
+
+.section p {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.section2 {
+    background-color: #5D737E;
+    min-height: 400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.section2 h2 {
+    color: #F0F7EE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+}
+
+/* Top Influencers */
+
+.influencers {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center;
+    gap: 20px;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto 40px;
+}
+
+.profile {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    padding: 0;
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: #F0F7EE;
+}
+
+.profile img {
+    max-width: 80%;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.overlay {
+    z-index: 2;
+    background-color: hsla(0, 20%, 6%, 0.621);
+    width: 300px;
+    height: 300px;
+    display: none;
+    position: absolute;
+    border-radius: 6px;
+}
+
+.overlay a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.profile:hover .overlay {
+    display: block;
+}
+
+/* Section 3 */
+
+.section3 {
+    flex: 1;
+    background-color: #F0F7EE;
+    min-height: 400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: auto;
+    background-image: url("images/uriel-sc-11KDtiUWRq4-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.section3 h2 {
+    padding-top: 70px;
+    color: #87BBA2;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.More {
+    background-color: #87BBA2;
+    width: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: 0;
+    border-radius: 13px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.374);
+    text-decoration: none;
+    text-align: center;
+    justify-self: center;
+    margin-top: 20px;
+}
+
+/* Influencers 2 */
+
+.influencers2 {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(3, 300px);
+    gap: 0;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.influencers2 h2 {
+    color: #5D737E;
+}
+
+.influencers2 .profile {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    color: #5D737E;
+}
+
+.influencers2 .profile h3 {
+    color: #5D737E;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #87BBA2;
+    font-family: cursive;
+    margin-bottom: 0;
+}
+
+footer .facebook {
+    background-image: url(images/facebook-logo.svg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-color: #5D737E;
+    border: 1px solid white;
+    background-size: 40%;
+    margin-left: 70px;
+}
+
+footer .twitter {
+    background-image: url(images/twitter-logo.svg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-color: #5D737E;
+    border: 1px solid white;
+    background-size: 60%;
+}
+
+footer .instagram {
+    background-image: url(images/instagram-logo.svg);
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-color: #5D737E;
+    border: 1px solid white;
+    background-size: 60%;
+    margin-right: 70px;
+}
+
+footer button {
+    margin-left: 15px;
+}
+
+footer button:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+#titleCard {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.storiesSec {
+    margin-left: 300px;
+    margin-right: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.storiesSec h3{
+    font-size: 35px;
+}
+
+.storiesSec p{
+    font-size: 25px;
+}
+
+.storiesSec li{
+    font-size: 25px;
+}
+
+@media (max-width: 1300px) {
+    .influencers {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(2, 300px);
+        justify-content: center;
+        gap: 20px;
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto 40px;
+    }
+    .storiesSec {
+        margin-left: 100px;
+        margin-right: 100px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
+/* PHONE */
+@media (max-width: 738px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Navigation */
+    nav {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menuButtons {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 18px;
+        margin: 5px 0;
+        padding-left: 0;
+    }
+
+    nav a:hover {
+        transform: none;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 60px;
+        margin: 0 10px 10px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    /* General sections */
+    .section,
+    .section2,
+    .section3 {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .section h2,
+    .section2 h2,
+    .section3 h2 {
+        font-size: 35px;
+    }
+
+    .section p {
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /* Top influencers */
+    .influencers {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .profile img {
+        width: 250px;
+        max-width: 80%;
+        height: auto;
+    }
+
+    /* Overlay */
+    .overlay {
+        width: 250px;
+        height: 250px;
+    }
+
+    .overlay a {
+        font-size: 30px;
+    }
+
+    /* Second influencer section */
+    .influencers2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 100%;
+        gap: 30px;
+    }
+
+    /* More button */
+    .More {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* Contact form */
+    form {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    footer h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    footer .facebook,
+    footer .twitter,
+    footer .instagram {
+        margin: 5px;
+    }
+
+    .storiesSec {
+        margin-left: 30px;
+        margin-right: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
